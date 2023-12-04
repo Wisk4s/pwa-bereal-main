@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografe - BeReal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body id="bereal">
+    <header>
+        <span id="logo-text">BeReal.</span>
+    </header>
+    <!-- Camera -->
+    <main id="camera">
+        <!-- Camera sensor (lente) -->
+        <canvas id="camera--sensor"></canvas>
+        <!-- Camera view (visualização) -->
+        <video id="camera--view" autoplay playsinline></video>
+        <!-- Camera output -->
+        <img src="//:0" alt="" id="camera--output">
+        <!-- Camera botão de tirar foto -->
+        <div class="button-container">
+            <button class="camera-virar" id="camera--test"> <i class="fas fa-bolt"></i></button>
+            <button class="camera-button" id="camera--trigger"></button>
+            <button class="camera-virar" id="camera--switch"><i class="fas fa-sync-alt"></i></button>
+        </div>
+    </main>
+</body>
+</html>
